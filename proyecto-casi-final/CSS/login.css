@@ -1,0 +1,180 @@
+
+*::before,
+*::after{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgb(15, 11, 41);
+    display: flex;
+    color: rgb(74, 187, 74);
+    gap: 20%;
+    height: min-content;
+
+    
+    
+}
+#titulo{
+    padding: 2%;
+    padding-left: 8%;
+    h1{
+        font-size: xx-large;
+    }
+    h2{
+        font-size: larger;
+    }
+}
+nav{
+    display: flex;
+    gap: 15%;
+    padding: 2%;
+    padding-top: 4%;
+    font-size: large;
+    
+    
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        transition: 200ms;
+    }
+    a:hover{
+        scale: 1.2;
+        color: rgb(94, 245, 119);
+    }
+}
+
+body{
+    
+    justify-content: center;
+    
+    background-color: rgb(31, 24, 56);
+}
+main{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+form{
+    width: 25%;
+    display: flex;
+   
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 1, 29);
+    margin: auto;
+    color: rgb(255, 255, 247);
+    justify-content: center;
+    border-radius: 10px;
+    padding: 4%;
+    margin: auto;
+    
+    
+    label{
+        font-weight: 600;
+        font-size: larger;
+    }
+    input{
+        border: none;
+        margin-bottom: 7%;
+        border-radius: 5px;
+        background-color: rgb(185, 185, 185);
+        padding: 4%;
+        width: 80%;
+
+        font-size: large;
+        transition: 300ms;
+        
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+    #sum{
+        width: 60%;
+        padding: 7px;
+        transition: 300ms;
+    }
+
+    #login_div{
+        display: flex;
+        flex-flow: column nowrap;
+        display: inline;
+        gap: 5px;
+    }
+    #sum:hover{
+        scale: 1.2;
+        opacity: 1;
+        cursor:grab;
+    }
+    
+    input:hover{
+        opacity: 0.5;
+    }
+
+    a{
+        color: rgb(201, 209, 255);
+        font-size: larger;
+    }
+}
+footer{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+    color: rgb(104, 100, 161);
+    padding: 0.5%;
+    background-color: rgb(49, 42, 73);
+
+  
+    
+    p{
+        padding: 2%;
+        span{
+            text-decoration: underline;
+            color: rgb(78, 77, 126);
+        }
+    }
+}
+#div2{
+    margin-left: 60%;
+}
+
+@media (max-width: 400px)
+{
+    header{
+        gap: 1rem;
+        width:100%;
+        flex-flow: row wrap;
+    }
+    #titulo{
+
+        h1{
+            font-size:large;
+        }
+        h2{
+            font-size: smaller;
+        }
+    }
+    nav{
+        width: max-content;
+        a{
+            font-size: small;
+        }
+    }
+
+    input{
+        font-size: small;
+        padding: 4%;
+        
+    }
+    label{
+        font-size: small;
+    }
+    form{
+        width: max-content;
+    }
+}
